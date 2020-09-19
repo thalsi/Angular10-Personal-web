@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fast-application"
+    }
+  },
+  "defaultProject": "fast-application",
+  "cli": {
+    "analytics": "e7792b83-3f47-4cb3-ae68-aae9cd507628"
+  }
 }
