@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "test": {
+    "shop": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/test",
+            "outputPath": "dist/shop",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "test:build"
+            "browserTarget": "shop:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "test:build:production"
+              "browserTarget": "shop:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "test:build"
+            "browserTarget": "shop:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "test:serve"
+            "devServerTarget": "shop:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "test:serve:production"
+              "devServerTarget": "shop:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "test"
+  "defaultProject": "shop"
 }
